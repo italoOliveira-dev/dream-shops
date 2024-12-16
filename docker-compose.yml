@@ -1,0 +1,15 @@
+services:
+  # ====================================================================================================================
+  # POSTGRES SERVER
+  # ====================================================================================================================
+  pg-docker:
+    image: postgres:14-alpine
+    container_name: dev-postgresql
+    environment:
+      POSTGRES_DB: dreamShopsDb
+      POSTGRES_USER: root
+      POSTGRES_PASSWORD: admin
+    ports:
+      - "5433:5432"
+    volumes:
+      - ./.data/postgresql/data:/var/lib/postgresql/data

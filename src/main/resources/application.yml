@@ -1,0 +1,7 @@
+spring:
+  application:
+    name: dream-shops
+  profiles:
+    active: ${APP_PROFILE:dev}
+  jpa:
+    show-sql: true
