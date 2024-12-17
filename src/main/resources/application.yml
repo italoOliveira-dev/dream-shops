@@ -5,3 +5,6 @@ spring:
     active: ${APP_PROFILE:dev}
   jpa:
     show-sql: true
+
+api:
+  prefix: "/api/v1"
